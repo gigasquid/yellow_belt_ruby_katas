@@ -41,7 +41,7 @@ If you have any problem setting up the project, please let me know.
 
 ## Git Branches
 
-I do have a solution branch with my solutions in them.  There are also
+I do have a solution branch with my solutions in them - branch named solutions.  There are also
 quite a number of solutions on the Coding Kata site.  I found it fun
 to browse them and see how other people solved them after I had
 finished mine. 
