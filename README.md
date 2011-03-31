@@ -1,84 +1,59 @@
-# The Gilded Rose Code Kata
+# Yellow Belt Ruby Katas
 
-This is a Ruby version of the Gilded Rose Kata, found
-[here](http://www.iamnotmyself.com/2011/02/13/RefactorThisTheGildedRoseKata.aspx).
+This is template for beginner level Ruby Katas done with tests
+in [rspec-given]](https://github.com/jimweirich/rspec-given).
+The katas are taken more or less from the 
+[Coding Kata site](http://codingkata.org/katas).
 
-This is a refactorying kata, so you will be starting with a legacy
-code base.  To work the Kata, clone this git repository and checkout
-the tag 'start-here'. Read the description below for the "rules"
-involving this kata.
+The idea for putting this out as git-hub project is that as a new Ruby learner,
+I wanted to explore using
+[rspec-given](https://github.com/jimweirich/rspec-given) with some
+small katas.  I was also inspired by Jim Weirich's [gilded rose
+kata](https://github.com/jimweirich/gilded_rose_kata).  I really liked
+having the test template set up for me.  I wanted to translate this to
+a set of smaller beginner katas.  
 
-## Changes from the original
+Of course, being a beginner, I had some pain in getting everything in my project setup
+and working for the first couple katas, but after I got my feet wet everything
+became quite enjoyable and was a lot of fun.  My hope is having the
+tests and a project all ready set up will take the initial pain out of
+it for people and leave all the fun.
 
-This Ruby version follows the original code very closely, but has the
-following changes:
+## Setup instructions
 
-* The original had no tests.  Since this is a refactoring kata, I felt
-  the tests were important and provide a fairly complete test suite.
-  Just delete the tests if you wish to "go it alone".
+I am assuming that you have Ruby 1.9 setup on your system:
 
-* The original used a hard coded set of "items", presumably for
-  testing the code.  Since I a test suite, the hard coded values were
-  not of much use.  I also changed the interface to accept a list of
-  items as a parameter rather than a hard coded constant.
+* gem install rspec
+* gem install rspec-given
+* gem install rake
 
-You can read
-[the original kata article](http://www.iamnotmyself.com/2011/02/13/RefactorThisTheGildedRoseKata.aspx) for more details.
+* Run rake in the project directory. You should see all the tests for
+  the katas run as pending
+* Choose a kata.  The shell source code with instructions is in the lib directory and the test
+  is in the spec directory.
+* Delete the line that says 
+          before { pending }
+* Run rake again.  You should have failing tests now
+* Fix the the code and run the tests!
+
+If you have any problem setting up the project, please let me know.
+
 
 ## Git Branches
 
-* The 'master' branch contains the starting point for the kata.  It is
-  also tagged as 'start-here'.
+I do have a solution branch with my solutions in them.  There are also
+quite a number of solutions on the Coding Kata site.  I found it fun
+to browse them and see how other people solved them after I had
+finished mine. 
 
-* The 'solution1' branch is my first solution for this kata.
+# Corrections
 
-Hope you enjoy this.     -- Jim Weirich
+Being a beginner myself, there might be mistakes or something I
+missed.  As always, feedback is welcome.
 
+# Thanks
 
-# Original Description of the Gilded Rose
+Special thanks to Doug Alcorn, who helped me setup my project to run
+the rspec tests through emacs.  If you are interested in emacs, I
+would recommend the rspec-mode.  Doug also has a cool [ruby-conf.el](https://github.com/dougalcorn/emacs.d/blob/master/ruby-conf.el)
 
-Hi and welcome to team Gilded Rose. As you know, we are a small inn
-with a prime location in a prominent city ran by a friendly innkeeper
-named Allison. We also buy and sell only the finest
-goods. Unfortunately, our goods are constantly degrading in quality as
-they approach their sell by date. We have a system in place that
-updates our inventory for us. It was developed by a no-nonsense type
-named Leeroy, who has moved on to new adventures. Your task is to add
-the new feature to our system so that we can begin selling a new
-category of items. First an introduction to our system:
-
-- All items have a SellIn value which denotes the number of days we
-  have to sell the item
-- All items have a Quality value which denotes how valuable the item
-  is
-- At the end of each day our system lowers both values for every item
-
-Pretty simple, right? Well this is where it gets interesting:
-
-  - Once the sell by date has passed, Quality degrades twice as fast
-  - The Quality of an item is never negative
-  - "Aged Brie" actually increases in Quality the older it gets
-  - The Quality of an item is never more than 50
-  - "Sulfuras", being a legendary item, never has to be sold or
-    decreases in Quality
-  - "Backstage passes", like aged brie, increases in Quality as it's
-    SellIn value approaches; Quality increases by 2 when there are 10
-    days or less and by 3 when there are 5 days or less but Quality
-    drops to 0 after the concert
-
-We have recently signed a supplier of conjured items. This requires an update to our system:
-
-- "Conjured" items degrade in Quality twice as fast as normal items
-
-Feel free to make any changes to the UpdateQuality method and add any
-new code as long as everything still works correctly. However, do not
-alter the Item class or Items property as those belong to the goblin
-in the corner who will insta-rage and one-shot you as he doesn't
-believe in shared code ownership (you can make the UpdateQuality
-method and Items property static if you like, we'll cover for
-you). Your work needs to be completed by Friday, February 18, 2011
-08:00:00 AM PST.
-
-Just for clarification, an item can never have its Quality increase
-above 50, however "Sulfuras" is a legendary item and as such its
-Quality is 80 and it never alters.
