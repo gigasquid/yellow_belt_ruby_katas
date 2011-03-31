@@ -1,9 +1,9 @@
 # Yellow Belt Ruby Katas
 
 This is template for beginner level Ruby Katas done with tests
-in [rspec-given]](https://github.com/jimweirich/rspec-given).
+in [rspec-given](https://github.com/jimweirich/rspec-given).
 The katas are taken more or less from the 
-[Coding Kata site](http://codingkata.org/katas).
+[Coding Kata site](http://codingkata.org/katas/).
 
 The idea for putting this out as git-hub project is that as a new Ruby learner,
 I wanted to explore using
