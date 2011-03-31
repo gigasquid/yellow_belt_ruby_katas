@@ -1,7 +1,7 @@
 require 'rspec/given'
 require 'fizzbuzz'
 
-describe "#fizzbuzz" do
+describe "#answer" do
 
   When (:result) { answer(inputnumber) }
   
