@@ -2,6 +2,7 @@ require 'rspec/given'
 require 'reverseword'
 
 describe "#reverse_word" do
+  before { pending }
 
   When (:result) { reverse_word(word) }
   

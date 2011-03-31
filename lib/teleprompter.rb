@@ -4,9 +4,5 @@
 # of the slang word and replacement values
 
 def translate(text,dictonary)
-  dictionary.each do |key, value| 
-    text = text.gsub(key, value)
-  end
-  return text
 end
 

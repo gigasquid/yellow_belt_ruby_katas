@@ -5,10 +5,4 @@
 # The return string should be "Hello (title) (last_name)
 
 def welcome(last_name, is_woman, is_sir)
-  title = "Mr."
-  title = "Ms." if is_woman
-  title = "Sir" if is_sir
-  
-  "Hello #{title} #{last_name}"
-  
 end

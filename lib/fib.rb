@@ -3,11 +3,6 @@
 # f(n) = f(n-1) + f(n-2)
 
 def fib(number)
-  case 
-  when number.zero? then 0
-  when number == 1 then 1
-  else fib(number-1) + fib(number-2)
-  end
 end
 
 

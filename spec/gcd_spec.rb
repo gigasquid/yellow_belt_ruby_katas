@@ -4,6 +4,7 @@ require 'gcd'
 describe "#gcd" do
 
   When (:result) { gcd(a,b) }
+  before { pending }
   
   context "with a as positive number and b as zero" do
     Given(:a) { 3 }

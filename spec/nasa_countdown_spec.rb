@@ -4,6 +4,7 @@ require 'nasa_countdown'
 describe "#countdown" do
 
   When (:result) { countdown(start) }
+  before { pending }
   
   context "with a start greater than 0" do
     Given(:start) { 5 }

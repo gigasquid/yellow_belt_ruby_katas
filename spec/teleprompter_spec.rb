@@ -4,6 +4,8 @@ require 'teleprompter'
 describe "#translate" do
 
   When (:result) { translate(text, dictionary) }
+  before { pending }
+  
   
   context "with text with one slang replacement"  do
     Given(:text) { 'In the hizzle' }

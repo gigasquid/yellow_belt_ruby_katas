@@ -4,6 +4,7 @@ require 'fib'
 describe "#fib" do
 
   When (:result) { fib(inputnumber) }
+  before { pending }
   
   context "with an input number of 0" do
     Given(:inputnumber) { 0 }

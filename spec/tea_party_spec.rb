@@ -4,6 +4,7 @@ require 'tea_party'
 describe "#welcome" do
 
   When (:result) { welcome(last_name, is_woman, is_sir) }
+  before { pending }
   
   context "with an woman" do
     Given(:last_name) { "Austen" }

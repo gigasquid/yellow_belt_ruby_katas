@@ -2,7 +2,4 @@
 # all the way down to zero
 
 def countdown(start)
-  countdown = []
-  start.downto(0){ |i| countdown << i }
-  countdown
- end
+end

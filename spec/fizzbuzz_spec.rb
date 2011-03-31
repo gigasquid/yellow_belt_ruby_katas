@@ -4,6 +4,7 @@ require 'fizzbuzz'
 describe "#answer" do
 
   When (:result) { answer(inputnumber) }
+  before { pending }
   
   context "with an input number divisible by 3" do
     Given(:inputnumber) { 3 }
