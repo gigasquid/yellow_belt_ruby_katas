@@ -23,11 +23,8 @@ it for people and leave all the fun.
 
 I am assuming that you have Ruby 1.9 setup on your system:
 
-* gem install rspec
-* gem install rspec-given
-* gem install rake
-
-* Run rake in the project directory. You should see all the tests for
+* Run 'bundle install' in the project directory, to install all prerequisite gem files.
+* Run 'rake' in the project directory. You should see all the tests for
   the katas run as pending
 * Choose a kata.  The shell source code with instructions is in the lib directory and the test
   is in the spec directory.
